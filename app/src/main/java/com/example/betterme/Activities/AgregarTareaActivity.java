@@ -37,7 +37,7 @@ public class AgregarTareaActivity extends AppCompatActivity {
         });
 
 
-        //Boton a cambiar
+
         buttonLeer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
