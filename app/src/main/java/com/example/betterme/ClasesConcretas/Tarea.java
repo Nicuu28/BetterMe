@@ -1,5 +1,8 @@
 package com.example.betterme.ClasesConcretas;
 
+import java.time.LocalDateTime;
+import java.util.Date;
+
 public class Tarea {
 
     //Inicio datos para la Base de datos
@@ -15,14 +18,17 @@ public class Tarea {
     private int id;
     private String nombre;
     private String descripcion;
+
+    private LocalDateTime fechaLimite;
     private boolean Cheklist;
     private boolean completado;
     private boolean estado;
 
-    public Tarea(int id, String nombre, String descripcion, boolean cheklist, boolean completado, boolean estado) {
+    public Tarea(int id, String nombre, String descripcion, LocalDateTime fechaLimite, boolean cheklist, boolean completado, boolean estado) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
+        this.fechaLimite = fechaLimite;
         this.Cheklist = cheklist;
         this.completado = completado;
         this.estado=estado;

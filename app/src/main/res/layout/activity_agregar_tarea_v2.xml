@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/agregar_tarea_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_Nombre"
+            android:textColor="#FFFF">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tarea_Hint_NombreDeTarea"
+            android:textColorHint="#6D6B6B"
+            android:textColor="#FFFF">
+        </EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_Descripcion"
+            android:textColor="#FFFF">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tarea_Hint_Descripcion"
+            android:textColorHint="#6D6B6B"
+            android:textColor="#FFFF">
+        </EditText>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_Checklist"
+            android:textColor="#FFFF">
+        </CheckBox>
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Acá se hace la parte de agregar las sub-tareas -->
+            <LinearLayout
+                android:id="@+id/contenedorEditTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp" />
+
+        </ScrollView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/tarea_AgregarFecha"
+            android:textColor="#FFFF">
+
+        </Button>
+
+    </LinearLayout>
+    <!-- calendar_popup -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#80000000" android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/popup_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="8dp">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weekNumberColor="#888888"
+            android:focusedMonthDateColor="#000000"
+            android:unfocusedMonthDateColor="#777777"
+            android:weekSeparatorLineColor="#AAAAAA"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/buttonCerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6200EE"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</FrameLayout>
+
+</RelativeLayout>

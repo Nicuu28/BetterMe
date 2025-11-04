@@ -20,6 +20,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.betterme.databinding.ActivityMainBinding;
 
+import java.time.LocalDateTime;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -38,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         // Configuramos el botón flotante usando el binding
         //agregar es la ID del boton
         binding.appBarMain.agregar.setOnClickListener(new View.OnClickListener() {
-            Tarea tarea = new Tarea(1, "NombreDeTarea", "Esto es una tarea", true, false, true);
+            LocalDateTime fecha = LocalDateTime.parse("2025-11-03 23:59:59");
+            Tarea tarea = new Tarea(1, "NombreDeTarea", "Esto es una tarea",fecha, true, false, true);
             String tareaTXT = "Tarea: " + tarea.getNombre() + " Descripción: " + tarea.getDescripcion();
 
             @Override

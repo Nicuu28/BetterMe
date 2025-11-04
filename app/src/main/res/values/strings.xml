@@ -1,12 +1,21 @@
 <resources>
-    <string name="app_name">BetterMe</string>
+    <string name="app_name" translatable="false">BetterMe</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <!-- Tareas -->
+    <string name="tarea_Nombre">  Nombre</string>
+    <string name="tarea_Descripcion">  Descripción</string>
+    <string name="tarea_Checklist">Checklist</string>
+    <string name="tarea_AgregarFecha">Agregar fecha limite</string>
 
+    <string name="tarea_Hint_NombreDeTarea">Nombre de tarea</string>
+    <string name="tarea_Hint_Descripcion">Descripción de la tarea</string>
+
+    <!-- Tareas -->
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
